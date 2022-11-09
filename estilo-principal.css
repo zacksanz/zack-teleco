@@ -15,14 +15,24 @@ article {
     font-family: 'Roboto Slab', serif;
 }
 
+article h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3em;
+}
+
+article h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2em;
+}
+
 #navegacion {
     width: max(27%, 200px);
-    left: 0;
+    left: 14px;
     top: 10em;
     padding: 1em;
     padding-bottom: 3em;
-    position: sticky;
-    transition: 1s;
+    position: absolute;
+    /* transition: 1s; */
     font-family: 'Roboto Slab', serif;
 }
 
@@ -31,7 +41,8 @@ article {
     width: 100%;
 }
 
-#navegacion li:hover a:link {
+#navegacion li:hover a:link,
+#navegacion li:hover a:visited {
     color: white;
 }
 
@@ -65,10 +76,18 @@ article {
 }
 
 #banner-isaac>h1 {
-    margin-top: 1.2em;
+    margin-top: 0.3em;
     margin-bottom: 0.1em;
+    font-weight: 100;
+    font-size: 3em;
 }
 
 #bibliografia {
     margin-top: 3em;
+}
+
+#bibliografia h1 {
+    margin-top: 3em;
+    font-size: 2em;
+    font-weight: 100;
 }

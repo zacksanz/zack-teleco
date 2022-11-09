@@ -1,0 +1,67 @@
+<html lang="es">
+
+<head>
+    <title>Sistemas defensivos - Por: Isaac Sánchez</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilo-principal.css">
+</head>
+</body>
+<div id="navegacion">
+    <h3 id="titulo-contenido">Contenido</h3>
+    <nav id="entradas"></nav>
+</div>
+
+<div id="banner-isaac">
+    <h1>Seguridad en las redes y sistemas defensivos</h1>
+    Wiki creado por Isaac Sánchez. Para el curso de Ingeniería de telecomunicaciones.
+</div>
+
+<Article>
+    <header>
+        <h1>Sistemas de detección de intrusiones (IDS)</h1>
+    </header>
+    <p>
+        Estos sistemas permiten identificar y, posteriormente, responder ante actividades no legítimas en recursos de la red o un sistema mediante mecanismos automatizados. De esta forma, se logra un mayor nivel de seguridad en las transferencias de información
+        entre cada una de las unidades de una organización.
+    </p>
+
+    <p>
+        Los principales componentes de un IDS son:
+    </p>
+    <ul>
+        <li>Sensores basados en equipo (host based sensors o HIDS). Reciben la información de aplicaciones en ejecución en un host en particular.</li>
+        <li>Sensores basados en red (network based sensors o NIDS). Recolectan información del tráfico de red.</li>
+        <li>Procesadores de eventos. Reciben la información procedente de los sensores y realizan inferencias sobre las intrusiones usando algún esquema:
+            <ul>
+                <li>Modelo de detección de usos indebidos: analizan el tráfico y lo comparan con una base de conocimiento (firma) sobre el modus operandi de agentes maliciosos.</li>
+                <li>Modelo de detección de anomalías: analizan el tráfico e intenta identificar actividad sospechosa, comparándolo con un perfil de comportamiento de usuario, proceso y servicio recurrente.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Entre algunos ejemplos de IDS tenemos:</p>
+    <ul>
+        <li><a href="https://www.solarwinds.com/security-event-manager">SolarWinds Security Event Manager</a></li>
+        <li><a href="https://www.fortinet.com/lat/products/siem/fortisiem">FortiSIEM</a></li>
+        <li><a href="https://zeek.org/">Bro</a></li>
+        <li><a href="https://www.snort.org/">Snort</a></li>
+        <li><a href="https://www.ossec.net/">OSSEC</a></li>
+        <li><a href="https://aide.github.io/">AIDE</a></li>
+
+    </ul>
+
+    <footer id="bibliografia">
+        <h1>Bibliografía</h1>
+        <ul>
+            <li>Guerra Soto, M. (2016). Interconexión de redes privadas y redes públicas. RA-MA Editorial.</li>
+            <li>Software Testing Help. (2022). Top 10 BEST Intrusion Detection Systems (IDS) [2022 Rankings]. <a href="https://www.softwaretestinghelp.com/intrusion-detection-systems/">https://www.softwaretestinghelp.com/intrusion-detection-systems/</a>.</li>
+            <li>Cooper, S. (2022). Intrusion Detection Systems Explained: 14 Best IDS Software Tools Reviewed. Comparitech. <a href="https://www.comparitech.com/net-admin/network-intrusion-detection-tools/">https://www.comparitech.com/net-admin/network-intrusion-detection-tools/</a>.</li>
+
+        </ul>
+    </footer>
+
+</Article>
+<script src="createmenu.js"></script>
+</body>
+
+</html>
