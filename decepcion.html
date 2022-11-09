@@ -1,0 +1,77 @@
+<html lang="es">
+
+<head>
+    <title>Sistemas defensivos - Por: Isaac Sánchez</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilo-principal.css">
+</head>
+</body>
+<div id="navegacion">
+    <h3 id="titulo-contenido">Contenido</h3>
+    <nav id="entradas"></nav>
+</div>
+
+<div id="banner-isaac">
+    <h1>Seguridad en las redes y sistemas defensivos</h1>
+    Wiki creado por Isaac Sánchez. Para el curso de Ingeniería de telecomunicaciones.
+</div>
+
+<Article>
+    <header>
+        <h1>Sistemas de decepción</h1>
+    </header>
+    <p>
+        Estos mecanismos buscan proteger los sistemas por medio del engaño y desvío de atención a los atacantes.
+    </p>
+
+    <h2>Honeypots</h2>
+
+    Actúan como señuelos dentro de la red que aparentemente exponen vulnerabilidades con el fin de atraer la atención del atacante, pero que en realidad está siendo monitorizada.
+    <figure>
+        <img src="images/honeypot1.jpg" />
+        <caption>Figura 1. Esquema de montaje de Honeypots en la red. Recuperado de <a href="https://www.hackingarticles.in/comprehensive-guide-on-honeypots/">https://www.hackingarticles.in/comprehensive-guide-on-honeypots/</a></caption>
+    </figure>
+    Dependiendo del diseño, existen los siguientes tipos:
+    <ul>
+        <li>De baja interacción: Exponen algunos servicios que permiten rastrear paquetes UDP, TCP e ICMP.</li>
+        <li>De media interacción: Exponen servicios similares a los usados en producción.</li>
+        <li>De alta interacción: Emplean software real vulnerable instalado en máquinas reales junto con servicios en producción.</li>
+        <li>Puros: Imitan el entorno real de producción.</li>
+    </ul>
+
+    <h2>Celdas de aislamiento</h2>
+    Tienen sistemas intermedios entre la red interna y externa capaces de separar el tráfico malicioso del legítimo, redirigiendo el tráfico malicioso a sistemas que aparentan ser de producción.
+    <figure>
+        <img src="images/deception1.jpg" />
+        <caption>Figura 2. Esquema de montaje de una celda de aislamiento. Recuperado de <a href="https://www.helpnetsecurity.com/2018/12/06/introduction-deception-technology/">https://www.helpnetsecurity.com/2018/12/06/introduction-deception-technology/</a></caption>
+    </figure>
+
+
+
+
+    <p>Entre algunas aplicaciones que nos permiten configurar honeypots e infraestructura de engaño tenemos:</p>
+    <ul>
+        <li> <a href="https://github.com/telekom-security/tpotce">T-pot</a> </li>
+        <li><a href="https://github.com/fofapro/fapro">FaPro</a></li>
+        <li><a href="https://github.com/desaster/kippo">Kippo</a></li>
+        <li><a href="http://ghh.sourceforge.net/">Google Hack Honeypot</a></li>
+        <li><a href="https://es.wordpress.org/plugins/formidable-honeypot/">Honeypot Formidable</a></li>
+        <li><a href="https://www.fortinet.com/products/fortideceptor">Fortideceptor</a></li>
+    </ul>
+
+    <footer id="bibliografia">
+        <h1>Bibliografía</h1>
+        <ul>
+            <li>Guerra Soto, M. (2016). Interconexión de redes privadas y redes públicas. RA-MA Editorial.</li>
+            <li>Chandel, R. (2020). Comprehensive Guide on Honeypots. Hacking Articles. <a href="https://www.hackingarticles.in/comprehensive-guide-on-honeypots/">https://www.hackingarticles.in/comprehensive-guide-on-honeypots/</a></li>
+            <li>Amoroso, E. (2018). An introduction to deception technology. HelpNetSecurity. <a href="https://www.helpnetsecurity.com/2018/12/06/introduction-deception-technology/">https://www.helpnetsecurity.com/2018/12/06/introduction-deception-technology/</a></li>
+            <li>el-brujo [nombre de usuario]. (2021). Los mejores HoneyPots: ejemplos, tipos, características y configuración. elhacker.net. <a href="https://blog.elhacker.net/2021/01/los-mejores-honeypots-ejemplos-y-tipos-trampas-rdp-ssh-cowrie-docker-rdpy.html">https://blog.elhacker.net/2021/01/los-mejores-honeypots-ejemplos-y-tipos-trampas-rdp-ssh-cowrie-docker-rdpy.html</a></li>
+
+        </ul>
+    </footer>
+
+</Article>
+<script src="createmenu.js"></script>
+</body>
+
+</html>

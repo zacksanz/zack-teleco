@@ -25,19 +25,55 @@
     <h2>Cortafuegos o firewall</h2>
     <p>Es un mecanismo de seguridad que puede venir en presentación de hardware standalone o como software que puede ser instalado en un host. Se identifican tres generaciones de acuerdo con sus características:</p>
     <ul>
-        <li><strong>De primera generación: </strong>funcionan en la capa 3 OSI filtran los paquetes de acuerdo con la información de la cabecera que indica el host de origen/destino y puertos de origen/destino.</li>
-        <li><strong>De segunda generación: </strong>filtran los paquetes de acuerdo con el estado de la comunicación.</li>
-        <li><strong>De tercera generación o next-gen: </strong>los cuales filtran los paquetes de acuerdo con el contenido y funcionan en la capa de aplicación.</li>
+        <li><strong>De primera generación: </strong>funcionan en la capa 3 OSI (red) filtran los paquetes de acuerdo con la información de la cabecera que indica el host de origen/destino y puertos de origen/destino.</li>
+        <li><strong>De segunda generación: </strong>filtran los paquetes de acuerdo con el estado de la comunicación. Son capaces de reconocer cuando los paquetes no hacen parte de una secuencia de comunicación conocida. Funcionan en la capa 4 OSI (transporte).</li>
+        <li><strong>De tercera generación o next-gen: </strong>los cuales filtran los paquetes de acuerdo con el contenido y funcionan en la capa 7 OSI (aplicación). Estos son capaces de bloquear paquetes de contenido que no cumplan con cierto criterio, por
+            ejemplo: que no estén cifrados, que no sean texto plano, que sean de material para adultos, etc.</li>
     </ul>
-
+    <figure>
+        <img src="images/firewall1.png" />
+        <caption>Figura 1. Ejemplo de montaje de firewall para proteger la red interna de una organización y la red externa.</caption>
+    </figure>
     <h2>Pasarela o proxy</h2>
-    <p>Son dispositivos que actúan como intermediarios entre dos redes y ofrecen la posibilidad de llevar un registro de las conexiones y el tráfico que los atraviesa.</p>
+    <p>Son dispositivos que actúan como intermediarios entre dos redes.</p>
+    <p>Algunas de las prestaciones que ofrece un proxy son:
+        <li>Llevar un registro de las conexiones y el tráfico que los atraviesa.</li>
+        <li>Son un mecanismo de seguridad que esconden la identidad del cliente, ya que el servidor registra la solicitud como si fuese del proxy.</li>
+        <li>Pueden optimizar el rendimiento de la red al almacenar los datos de los sitios que se visitan de forma recurrente y servirlos al cliente sin necesidad de volver a solitarlos al servidor.</li>
+        <li>Permiten acceder a contenido disponible en ubicaciones geográficas distintas a las actuales del cliente.</li>
+    </p>
+    <figure>
+        <img src="images/proxy1.webp" />
+        <caption>Figura 2. Esquema de conexión de un proxy.</caption>
+    </figure>
+    <p>
+        Para hacer uso de un proxy, podemos configurar un host con este servicio o podemos hacer uso de varios servicios PaaS tanto pagos como gratuitos. Entre algunos de los aplicativos que podemos usar para configurar nuestro propio proxy tenemos:
+        <ul>
+            <li><a href="https://pkgs.org/download/squid">Squid (Linux)</a></li>
+            <li><a href="https://pkgs.org/download/privoxy">Privoxy</a></li>
+            <li><a href="https://pkgs.org/download/polipo">Polipo</a></li>
+            <li><a href="https://pkgs.org/download/nginx">Nginx</a></li>
+        </ul>
+    </p>
+
+    <p>
+        Entre algunos de los servicios en línea tenemos:
+        <ul>
+            <li><a href="https://smartproxy.com/">Smartproxy</a></li>
+            <li><a href="https://iproyal.com/">IPRoyal</a></li>
+            <li><a href="https://brightdata.com/">Brightdata</a></li>
+            <li><a href="https://hide.me/es/">Hide me</a></li>
+        </ul>
+    </p>
 
 
     <footer id="bibliografia">
         <h1>Bibliografía</h1>
         <ul>
             <li>Guerra Soto, M. (2016). Interconexión de redes privadas y redes públicas. RA-MA Editorial.</li>
+            <li>Computer Networking Notes. (2019). Types of Firewall Explained with Functions and Features. <a href="https://www.computernetworkingnotes.com/ccna-study-guide/types-of-firewall-explained-with-functions-and-features.html">https://www.computernetworkingnotes.com/ccna-study-guide/types-of-firewall-explained-with-functions-and-features.html</a></li>
+            <li>Pavel [nombre de usuario]. Best Linux Proxy Server. It Syndicate. <a href="https://itsyndicate.org/blog/best-linux-proxy-server/">https://itsyndicate.org/blog/best-linux-proxy-server/</a></li>
+            <li>Georgiev, D. (2022). 10+ Best Proxy Server Services for 2022. Techjury. <a href="https://techjury.net/best/proxy-server">https://techjury.net/best/proxy-server</a></li>
         </ul>
     </footer>
 

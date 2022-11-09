@@ -5,7 +5,7 @@
     { "caption": "Detección de intrusiones", "url": "ids.html" },
     { "caption": "Gestión de eventos", "url": "eventos-alarmas-intrusiones.html" },
     { "caption": "Prevención de intrusiones", "url": "ips.html" },
-    { "caption": "Sistemas de decepción", "url": "decepción.html" },
+    { "caption": "Sistemas de decepción", "url": "decepcion.html" },
     { "caption": "Virtualización", "url": "virtualizacion.html" },
     { "caption": "VPN", "url": "vpn.html" }
 
